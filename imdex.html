@@ -1,11 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="en"  data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trust NationBD</title>
+     <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind css and DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind css config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              color_primary: "rgba(17, 17, 17, 0.7)",  
+              color_main: "rgb(17, 17, 17)",
+              btn_color: "rgb(180, 244, 97)",
+              nav_color: "rgb(249, 247, 243)",
+            },
+            fontFamily: {
+              lexend: ["Lexend", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-lexend">
+    <!-- nav section start -->
+    <nav class="sticky top-0 ">
+        <div class="bg-nav_color">
+            <div class="navbar sm:px-8 sm:pt-10 w-11/12 mx-auto pb-8 ">
+                <div class="navbar-start">
+                  <div class="dropdown"></div>
+                  <button class="btn btn-ghost text-color_main bg-btn_color text-xl font-normal">Blog</button>
+                </div>
+                <div class="navbar-center">
+                    <img src="assets/logo.png" alt="logo">
+                    <p class="text-color_main text-xl pl-2">Trust NationBD</p>
+                </div>
+                <div class="navbar-end">
+                  <div class="flex justify-between items-center gap-2">
+                    <img src="assets/coin.png" alt="coin image" />
+                    <p class="text-color_primary">5200 BDT</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+      <div class="mt-10 flex justify-center space-x-4">
+        <button class="btn text-color_main bg-btn_color text-xl font-normal">Donation</button>
+        <button class="btn text-color_primary text-xl font-normal">History</button>
+      </div>
+    </nav>
+    <!-- nav section end -->
+     <!-- card section 1 -->
+     <div class="hero my-12">
+        <div class="hero-content flex-col lg:flex-row gap-8 p-4">
+            <img src="assets/noakhali.png" alt="flood">
+            
+          <div class="space-y-6">
+            <button class="border-none flex justify-center items-center text-color_primary bg-slate-200 p-1 rounded-md"><img src="assets/coin.png" alt="coin" class="pr-1">0 BDT</button>
+            <h4 class="text-xl font-normal">Donate for Flood at Noakhali, Bangladesh!</h4>
+            <p class="py-4 text-color_main">
+                The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+            </p>
+            <div class="w-full mb-4">
+                <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+            </div>
+            <button class="btn font-normal text-color_main bg-btn_color text-xl border-none">Donate Now</button>
+          </div>
+      </div>
+      </div>
+      <!-- card section2 end -->
+
+      <!-- card section 2 start -->
+      <div class="hero my-12">
+        <div class="hero-content flex-col lg:flex-row gap-8 p-4">
+            <img src="assets/feni.png" alt="flood">
+            
+          <div class="space-y-6">
+            <button class="border-none flex justify-center items-center text-color_primary bg-slate-200 p-1 rounded-md"><img src="assets/coin.png" alt="coin" class="pr-1">600 BDT</button>
+            <h4 class="text-xl font-normal">Donate for Flood Relief in Feni,Bangladesh</h4>
+            <p class="py-4 text-color_main">
+                The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
+            </p>
+            <div class="w-full mb-4">
+                <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+            </div>
+            <button class="btn font-normal text-color_main bg-btn_color text-xl border-none">Donate Now</button>
+          </div>
+      </div>
+      </div>
+      <!-- card section 2 end -->
+
+      <!-- card section 3 start  -->
+      <div class="hero my-12">
+        <div class="hero-content flex-col lg:flex-row gap-8 p-4">
+            <img src="assets/quota-protest.png" alt="flood">
+            
+          <div class="space-y-6">
+            <button class="border-none flex justify-center items-center text-color_primary bg-slate-200 p-1 rounded-md"><img src="assets/coin.png" alt="coin" class="pr-1">2400 BDT</button>
+            <h4 class="text-xl font-normal">Aid for Injured in the Quota Movement</h4>
+            <p class="py-4 text-color_main">
+                The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
+            </p>
+            <div class="w-full mb-4">
+                <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+            </div>
+            <button class="btn font-normal text-color_main bg-btn_color text-xl border-none">Donate Now</button>
+          </div>
+      </div>
+      </div>
+      <!-- card section 3 end -->
+    </body> 
+  </body>
 </html>
