@@ -68,3 +68,27 @@ document.getElementById("donation-for-quota").addEventListener("click", function
 
 
 })
+
+// donate for sylhet
+
+document.getElementById("add-donate-btn-card-4").addEventListener("click", function(){
+    const donateForSylhet = inputValueById("donation-for-sylhet");
+    const currentBalance = stringConvertNumber("get-balance-sylhet");
+    if(isNaN(donateForSylhet) || 0>donateForSylhet){
+        return
+    }
+    else{
+        showModal("add-donate-btn-card-4", "my_modal_4")
+        const newBalance = donateForSylhet + currentBalance;
+    document.getElementById("get-balance-sylhet").innerText = newBalance;
+    }
+
+   transactionHistory("donation-for-sylhet", "heading-tittle-4" );
+
+    
+    document.getElementById("donation-for-sylhet").value =  "";
+   const minusBalance = minusBalanceNumber();
+   const balance = minusBalance - donateForSylhet;
+   document.getElementById("minus-balance").innerText = balance;
+    
+})
