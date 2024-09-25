@@ -12,6 +12,13 @@ document.getElementById("show-donation-transaction").addEventListener("click", f
 })
 
 
+document.getElementById("blog-btn").addEventListener('click', function(){
+    window.location.href= './blog.html'
+})
+
+
+
+
 
 
 
