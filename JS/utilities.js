@@ -7,11 +7,6 @@ function inputValueById(id){
     }
     const inputNumber = parseFloat(inputValue);
 
-    const getBalance = document.getElementById("minus-balance").innerText;
-    const getBalanceNumber = parseFloat(getBalance);
-    const minusBalance = getBalanceNumber - inputNumber;
-    document.getElementById("minus-balance").innerText = minusBalance;
-
     return inputNumber;
 }
   
@@ -28,6 +23,12 @@ function stringConvertNumber(id){
     return number;
 }
 
+
+function minusBalanceNumber(){
+    const getBalance = document.getElementById("minus-balance").innerText;
+    const getBalanceNumber = parseFloat(getBalance);
+    return getBalanceNumber;
+}
 // showcase function
 
 function showSectionById(id){

@@ -38,33 +38,29 @@
       </script>
 </head>
 <body class="font-lexend">
-    <div class="w-11/12 mx-auto py-12 space-y-5">
-        <nav class="sticky top-0 z-50 backdrop-blur-md ">
-            <div class="bg-nav_color">
-                <div class="navbar sm:px-8 sm:pt-10 w-11/12 mx-auto pb-8 ">
-                    <div class="navbar-start">
-                      <div class="dropdown"></div>
-                      <button id="home-btn" class="btn btn-ghost text-color_main bg-btn_color text-xl font-normal"><a href="index.html">Home</a></button>
-                    </div>
-                    <div class="navbar-center">
-                        <img src="assets/logo.png" alt="logo">
-                        <p class="text-color_main text-xl pl-2">Trust NationBD</p>
-                    </div>
-                    <div class="navbar-end">
-                      <div class="flex justify-between items-center gap-2">
-                        <img src="assets/coin.png" alt="coin image" />
-                        <p id="minus-balance" class="text-color_primary">5200 </p>BDT
-                      </div>
-                    </div>
+    <nav class="sticky top-0 z-50 backdrop-blur-md ">
+        <div class="bg-nav_color">
+            <div class="navbar sm:px-6 sm:pt-10 w-11/12 mx-auto pb-7">
+                <div class="navbar-start hidden sm:flex">
+                  <button id="home-btn" class="btn btn-ghost text-color_main bg-btn_color text-xl font-normal"><a href="index.html">Home</a></button>
+                </div>
+                <div class="navbar-start sm:navbar-center">
+                    <img src="assets/logo.png" alt="logo">
+                    <p class="text-color_main text-xl pl-2">Trust NationBD</p>
+                </div>
+                <div class="navbar-end sm:flex">
+                  <div class="flex justify-between items-center gap-2">
+                    <img  src="assets/coin.png" alt="coin image" />
+                    <p id="minus-balance" class="text-color_primary">5200 </p>BDT
+                  </div>
                 </div>
             </div>
-          <div class="mt-10 flex justify-center space-x-4 pb-3">
-            <button id="show-donation" class="btn text-color_main bg-btn_color text-xl font-normal">Donation</button>
-            <button id="show-donation-transaction" class="btn text-color_primary text-xl font-normal">History</button>
-          </div>
-        </nav>
+            <button id="home-btn" class="mx-5 my-4 lg:hidden btn btn-ghost text-color_main bg-btn_color text-xl font-normal"><a href="index.html">Home</a></button>
+        </div>
+    </nav>
+    <div class="w-11/12 mx-auto py-12 space-y-5">
         <div class="flex items-center">
-            <h1 class="text-5xl">Important FAQ </h1>
+            <h1 class="text-2xl sm:text-5xl">Important FAQ </h1>
             <img class="pb-3" src="assets/icons8-faq (1).gif" alt="">
         </div>
         <div class="collapse collapse-arrow bg-base-200">

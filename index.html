@@ -41,12 +41,15 @@
     <!-- nav section start -->
     <nav class="sticky top-0 z-50 backdrop-blur-md ">
         <div class="bg-nav_color">
-            <div class="navbar sm:px-8 sm:pt-10 w-11/12 mx-auto pb-8 ">
+          <div class="lg:hidden flex items-center gap-1 px-5 py-5">
+            <img src="assets/logo.png" alt="logo">
+            <p class="text-color_main text-xl pl-2">Trust NationBD</p>
+        </div>
+            <div class="navbar sm:px-10 sm:pt-10 w-11/12 mx-auto pb-8 ">
                 <div class="navbar-start">
-                  <div class="dropdown"></div>
                   <button id="blog-btn" class="btn btn-ghost text-color_main bg-btn_color text-xl font-normal">Blog</button>
                 </div>
-                <div class="navbar-center">
+                <div class="navbar-center hidden sm:flex">
                     <img src="assets/logo.png" alt="logo">
                     <p class="text-color_main text-xl pl-2">Trust NationBD</p>
                 </div>
@@ -68,7 +71,7 @@
       <div class="hidden" id="transaction-history">
       </div>
        <!-- card section 1 -->
-    <div id="donate-section">
+    <div id="donate-section" class="px-4">
       <div class="hero my-12">
         <div class="hero-content flex-col lg:flex-row gap-8 p-4 shadow-lg border rounded-2xl">
             <img src="assets/noakhali.png" alt="flood">
