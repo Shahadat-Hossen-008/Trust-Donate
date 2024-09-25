@@ -9,12 +9,13 @@ document.getElementById("add-donate-btn-card-1").addEventListener("click", funct
         const newBalance = donateForNoakhali + currentBalance;
     document.getElementById("get-balance").innerText = newBalance;
     }
+   transactionHistory("donation-for-noakhali", "heading-tittle-1" );
+   
 
     
     document.getElementById("donation-for-noakhali").value =  "";
     
 })
-
 
 // Donation for feni
 document.getElementById("donate-for-feni").addEventListener("click", function(){
@@ -27,7 +28,7 @@ document.getElementById("donate-for-feni").addEventListener("click", function(){
         const newBalance = currentBalance + donateForFeni;
     document.getElementById("get-balance-feni").innerText = newBalance;
     }
-    
+    transactionHistory("input-donation-feni", "heading-tittle-2" );
     document.getElementById("input-donation-feni").value =  "";
 })
 
@@ -44,7 +45,7 @@ document.getElementById("donation-for-quota").addEventListener("click", function
         const newBalance = currentBalance + donateForQuota;
     document.getElementById("get-balance-quota").innerText = newBalance;
     }
-    
+    transactionHistory("input-donate-quota", "heading-tittle-3" );
     document.getElementById("get-balance-quota").value =  "";
 
 })
