@@ -5,10 +5,6 @@ function inputValueById(id){
         return;
 
     }
-    else{
-      const btn = document.getElementById("add-donate-btn-card-1");
-      btn.onclick = my_modal_1.showModal();
-    }
     const inputNumber = parseFloat(inputValue);
 
     const getBalance = document.getElementById("minus-balance").innerText;
@@ -17,6 +13,12 @@ function inputValueById(id){
     document.getElementById("minus-balance").innerText = minusBalance;
 
     return inputNumber;
+}
+  
+function showModal(id1, id2){
+    const btn = document.getElementById(id1);
+    const modal = document.getElementById(id2);
+    btn.onclick = modal.showModal();
 }
 
 
@@ -46,6 +48,7 @@ function transactionHistory(id1, id2){
     div.classList.add('w-9/12')
     div.classList.add('mx-auto');
     div.classList.add('p-7');
+    div.classList.add('mb-5')
     div.innerHTML = `
     <p class= "text-xl font-semibold pb-2">${inputNumber} Taka is Donated for ${tittle} </p>
     <p class="text-gray-500 text-base">${d}</p>
